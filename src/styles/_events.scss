@@ -1,0 +1,35 @@
+@use 'variables';
+
+.events {
+    background-image: linear-gradient(#000000,#c0c0c0);
+    margin: 24px auto;
+    color: #fff;
+
+    &__event {
+        margin: 60px 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        &__img {
+            width: 30%;
+            height: 250px;
+            
+        }
+
+        &__item {
+            padding: 16px;
+
+            &__title {
+                margin: 0 auto;
+                font-size: 48px;
+                font-family: variables.$fontTitle;
+                padding-bottom: 16px;
+            }
+    
+            &__text {
+                padding: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use 'variables';
+
+.hero {
+    height: 600px;
+    margin: 24px auto;
+    padding: 24px 0;
+    background-image: url(../images/festa.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 20%;
+
+    &__title {
+        text-align: center;
+        font-family: variables.$fontTitle;
+        font-size: 48px;
+    }
+
+    &__text {
+        margin: 20px auto;
+        padding: 8px 16px;
+        width: fit-content;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: #fff;
+        background-color: #c0999f;
+    }
+}

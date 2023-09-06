@@ -1,0 +1,23 @@
+.infos-bar {
+    margin: 24px auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+    &__infos {
+        width: 100%;
+        padding-bottom: 8px;
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 2px solid #fff;
+
+        &__info {
+            color: #fff;
+
+            b {
+                display: block;
+                padding: 8px 0;
+            }
+        }
+    }
+}
