@@ -10,10 +10,28 @@
     background-position: center;
     border-radius: 20%;
 
+    @media (max-width: 768px) {
+        margin: 0;
+        background-size: cover;
+        border-radius: 0;
+    }
+
+    @media (max-width: 1024px) {
+        margin: 0;
+        background-size: cover;
+        border-radius: 0;
+    }
+
     &__title {
+        margin: 24px;
         text-align: center;
         font-family: variables.$fontTitle;
         font-size: 48px;
+
+        @media (max-width: 768px) {
+            margin: 0; 
+            font-size: 36px;
+        }
     }
 
     &__text {
@@ -23,7 +41,14 @@
         text-align: center;
         font-weight: bold;
         font-size: 24px;
-        color: #fff;
-        background-color: #c0999f;
+        color: variables.$fontColor;
+        background-color: variables.$mainBackground;
+        border-radius: 16px;
+
+        @media (max-width: 768px) {
+            margin: 24px auto; 
+            padding: 12px;
+            font-size: 20px;
+        }
     }
 }

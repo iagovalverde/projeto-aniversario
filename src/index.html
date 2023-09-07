@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="container">
@@ -22,7 +23,7 @@
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__info">
                         <b>Data</b>
-                        11/01/1996 às 20h
+                        11/01/2024 às 20h
                     </li>
                     <li class="infos-bar__infos__info">
                         <b>Localização</b>
@@ -35,35 +36,41 @@
                 </ul>
             </section>
             <section class="events">
+                <h2 class="events__title">Se prepare</h2>
+                <p class="events__paragraph">
+                    Venha comemorar meu aniversário, vai ser incrível! <br> Teremos muita comida boa, além de competições pra lá de divertidas.
+                </p>
                 <div class="events__event">
-                    <img class="events__event__img" src="./images/falcao.jpg" alt="">
-                    <div class="events__event__item">
-                        <h2 class="events__event__item__title">Competição Brega</h2>
-                        <p class="events__event__item__text">
-                            Os convidados vão competir, o mais brega ganhará um prêmio surpresa.
+                    <img class="events__event__img" src="images/cloth.svg" alt="Roupa colorida" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="events__event__description" data-aos="fade-left">
+                        <h3 class="events__event__description__title">O estiloso</h3>
+                        <p class="events__event__description__text">
+                            O convidado que estiver combinando menos poderá repetir o bolo!
                         </p>
                     </div>
                 </div>
                 <div class="events__event">
-                    <img class="events__event__img" src="./images/come-mais.jpg" alt="">
-                    <div class="events__event__item">
-                        <h2 class="events__event__item__title">Competição Hamburgão</h2>
-                        <p class="events__event__item__text">
-                            Os convidados vão competir, quem comer mais hamburguers em 15 minutos levará o bolo pra casa, caso sobre.
+                    <img class="events__event__img" src="images/hamburguer.svg" alt="Hamburguer" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="events__event__description" data-aos="fade-left">
+                        <h3 class="events__event__description__title">Quem come mais</h3>
+                        <p class="events__event__description__text">
+                            O convidado que comer mais hambúrgueres em 15 minutos, levará o bolo pra casa, caso sobre!
                         </p>
                     </div>
                 </div>
                 <div class="events__event">
-                    <img class="events__event__img" src="./images/falcao.jpg" alt="">
-                    <div class="events__event__item">
-                        <h2 class="events__event__item__title">Competição Brega</h2>
-                        <p class="events__event__item__text">
-                            Os convidados vão competir, o mais brega ganhará um prêmio surpresa.
+                    <img class="events__event__img" src="images/microphone.svg" alt="Microfone" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="events__event__description" data-aos="fade-left">
+                        <h3 class="events__event__description__title">Karaoke desafinado</h3>
+                        <p class="events__event__description__text">
+                            O convidado mais desafinado não precisará trazer presente no próximo ano, já que não será convidado!
                         </p>
                     </div>
                 </div>
             </section>
         </main>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

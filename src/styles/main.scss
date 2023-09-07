@@ -18,5 +18,6 @@
 }
 
 body {
-    background-color: #000;
+    background-image: linear-gradient(variables.$mainBackground, variables.$secondaryBackground);
+    overflow-x: hidden;
 }

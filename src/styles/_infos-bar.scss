@@ -1,18 +1,26 @@
+@use 'variables';
+
 .infos-bar {
     margin: 24px auto;
-    display: flex;
-    justify-content: space-evenly;
-    
 
     &__infos {
-        width: 100%;
-        padding-bottom: 8px;
         display: flex;
         justify-content: space-evenly;
-        border-bottom: 2px solid #fff;
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 2px solid variables.$fontColor;
+
+        @media (max-width: 768px) {
+            display: block;
+            text-align: center;
+        }
 
         &__info {
-            color: #fff;
+            color: variables.$fontColor;
+
+            @media (max-width: 768px) {
+                margin: 16px;
+            }
 
             b {
                 display: block;

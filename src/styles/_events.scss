@@ -1,34 +1,82 @@
 @use 'variables';
 
 .events {
-    background-image: linear-gradient(#000000,#c0c0c0);
-    margin: 24px auto;
-    color: #fff;
+    &__title {
+        margin: 32px auto;
+        padding: 16px;
+        width: fit-content;
+        text-align: center;
+        font-size: 48px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: variables.$mainBackground;
+        color: variables.$fontColor;
+        border-radius: 16px;
+    }
+
+    &__paragraph {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: variables.$fontColor;
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+            margin: 0 12px;
+        }
+    }
 
     &__event {
-        margin: 60px 0;
         display: flex;
-        justify-content: space-evenly;
+        margin: 80px 0;
 
-        &__img {
-            width: 30%;
-            height: 250px;
-            
+        @media (max-width: 768px) {
+            display: block;
+            text-align: center;
         }
 
-        &__item {
-            padding: 16px;
+        @media (max-width: 1024px) {
+            margin: 24px;
+        }
+
+        &__img {
+            height: 180px;
+            margin-right: 80px;
+
+            @media (max-width: 768px) {
+                height: 160px;
+                margin: 0 auto;
+            }
+        }
+
+        &__description {
+            margin: 0 24px;
+
+            @media (max-width: 768px) {
+                margin: 0 auto;
+            }
 
             &__title {
-                margin: 0 auto;
-                font-size: 48px;
-                font-family: variables.$fontTitle;
                 padding-bottom: 16px;
+                font-size: 60px;
+                font-family: variables.$fontTitle;
+                color: variables.$mainBackground;
+
+                @media (max-width: 768px) {
+                    font-size: 48px;
+                }
             }
-    
-            &__text {
-                padding: 16px;
+
+            &__text{
+                color: variables.$fontColor;
                 font-weight: bold;
+                width: 80%;
+
+                @media (max-width: 768px) {
+                    margin: 0 auto;
+                    font-size: 24px;
+                }
             }
         }
     }
